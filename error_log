@@ -1,0 +1,91 @@
+[07-May-2018 20:32:59 Asia/Tehran] PHP Warning:  Uncaught ErrorException: require_once(/lib/zarin/lib/nusoap.php): failed to open stream: No such file or directory in /home/maritair/public_html/local/resources/views/request.php:3
+Stack trace:
+#0 /home/maritair/public_html/local/resources/views/request.php(3): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/l...', '/home/maritair/...', 3, Array)
+#1 /home/maritair/public_html/local/resources/views/request.php(3): require_once()
+#2 /home/maritair/public_html/local/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(42): include('/home/maritair/...')
+#3 /home/maritair/public_html/local/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(20): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/maritair/...', Array)
+#4 /home/maritair/public_html/local/vendor/laravel/framework/src/Illuminate/View/View.php(137): Illuminate\View\Engines\PhpEngine->get('/home/maritair/...', Array)
+#5 /home/maritair/public_html/local/vendor/laravel/framework/src/Illumina in /home/maritair/public_html/local/resources/views/request.php on line 3
+[07-May-2018 20:32:59 Asia/Tehran] PHP Fatal error:  Illuminate\View\Engines\PhpEngine::main(): Failed opening required '/lib/zarin/lib/nusoap.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/maritair/public_html/local/resources/views/request.php on line 3
+[07-May-2018 20:35:45 Asia/Tehran] PHP Warning:  Uncaught ErrorException: require_once(~/lib/zarin/lib/nusoap.php): failed to open stream: No such file or directory in /home/maritair/public_html/local/resources/views/request.php:3
+Stack trace:
+#0 /home/maritair/public_html/local/resources/views/request.php(3): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(~/...', '/home/maritair/...', 3, Array)
+#1 /home/maritair/public_html/local/resources/views/request.php(3): require_once()
+#2 /home/maritair/public_html/local/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(42): include('/home/maritair/...')
+#3 /home/maritair/public_html/local/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(20): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/maritair/...', Array)
+#4 /home/maritair/public_html/local/vendor/laravel/framework/src/Illuminate/View/View.php(137): Illuminate\View\Engines\PhpEngine->get('/home/maritair/...', Array)
+#5 /home/maritair/public_html/local/vendor/laravel/framework/src/Illumin in /home/maritair/public_html/local/resources/views/request.php on line 3
+[07-May-2018 20:35:45 Asia/Tehran] PHP Fatal error:  Illuminate\View\Engines\PhpEngine::main(): Failed opening required '~/lib/zarin/lib/nusoap.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/maritair/public_html/local/resources/views/request.php on line 3
+[07-May-2018 21:02:38 Asia/Tehran] PHP Warning:  Uncaught ErrorException: require_once(/lib/zarin/lib/nusoap.php): failed to open stream: No such file or directory in /home/maritair/public_html/local/resources/views/request.php:3
+Stack trace:
+#0 /home/maritair/public_html/local/resources/views/request.php(3): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/l...', '/home/maritair/...', 3, Array)
+#1 /home/maritair/public_html/local/resources/views/request.php(3): require_once()
+#2 /home/maritair/public_html/local/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(42): include('/home/maritair/...')
+#3 /home/maritair/public_html/local/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(20): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/maritair/...', Array)
+#4 /home/maritair/public_html/local/vendor/laravel/framework/src/Illuminate/View/View.php(137): Illuminate\View\Engines\PhpEngine->get('/home/maritair/...', Array)
+#5 /home/maritair/public_html/local/vendor/laravel/framework/src/Illumina in /home/maritair/public_html/local/resources/views/request.php on line 3
+[07-May-2018 21:02:38 Asia/Tehran] PHP Fatal error:  Illuminate\View\Engines\PhpEngine::main(): Failed opening required '/lib/zarin/lib/nusoap.php' (include_path='.:/opt/alt/php70/usr/share/pear') in /home/maritair/public_html/local/resources/views/request.php on line 3
+[08-Feb-2019 17:50:22 Asia/Tehran] PHP Fatal error:  Class 'App\Http\Controllers\admin\AdminController' not found in /home/maryamigold/public_html/local/app/Http/Controllers/Admin/ArticleController.php on line 11
+[08-Feb-2019 17:50:32 Asia/Tehran] PHP Fatal error:  Class 'App\Http\Controllers\admin\AdminController' not found in /home/maryamigold/public_html/local/app/Http/Controllers/Admin/ArticleController.php on line 11
+[08-Feb-2019 17:50:42 Asia/Tehran] PHP Fatal error:  Class 'App\Http\Controllers\admin\AdminController' not found in /home/maryamigold/public_html/local/app/Http/Controllers/Admin/ArticleController.php on line 11
+[19-Feb-2019 09:13:28 Asia/Tehran] PHP Fatal error:  Class 'App\Http\Controllers\admin\AdminController' not found in /home/maryamigold/public_html/local/app/Http/Controllers/Admin/ArticleController.php on line 11
+[19-Feb-2019 20:38:35 Asia/Tehran] PHP Fatal error:  Class 'App\Http\Controllers\admin\AdminController' not found in /home/maryamigold/public_html/local/app/Http/Controllers/Admin/ArticleController.php on line 11
+[19-Feb-2019 20:38:40 Asia/Tehran] PHP Fatal error:  Class 'App\Http\Controllers\admin\AdminController' not found in /home/maryamigold/public_html/local/app/Http/Controllers/Admin/ArticleController.php on line 11
+[19-Feb-2019 20:38:57 Asia/Tehran] PHP Fatal error:  Class 'App\Http\Controllers\admin\AdminController' not found in /home/maryamigold/public_html/local/app/Http/Controllers/Admin/ArticleController.php on line 11
+[14-May-2019 21:50:45 Asia/Tehran] PHP Fatal error:  Can't use function return value in write context in /home/maryamigold/public_html/local/app/Http/Controllers/OrderController.php on line 382
+[14-May-2019 21:51:33 Asia/Tehran] PHP Fatal error:  Can't use function return value in write context in /home/maryamigold/public_html/local/app/Http/Controllers/OrderController.php on line 382
+[14-May-2019 21:51:45 Asia/Tehran] PHP Fatal error:  Can't use function return value in write context in /home/maryamigold/public_html/local/app/Http/Controllers/OrderController.php on line 382
+[14-May-2019 21:53:03 Asia/Tehran] PHP Fatal error:  Can't use function return value in write context in /home/maryamigold/public_html/local/app/Http/Controllers/OrderController.php on line 383
+[03-Jul-2019 17:55:53 Asia/Tehran] PHP Warning:  Unterminated comment starting line 74 in /home/maryamigold/public_html/local/app/Http/Controllers/WelcomeController.php on line 74
+[04-Jan-2020 14:06:51 UTC] PHP Fatal error:  require(): Failed opening required '/home/imadevelop/orion/../bootstrap/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/imadevelop/orion/index.php on line 22
+[04-Jan-2020 14:07:48 UTC] PHP Fatal error:  require(): Failed opening required '/home/imadevelop/orion/../bootstrap/autoload.php' (include_path='.:/opt/cpanel/ea-php56/root/usr/share/pear') in /home/imadevelop/orion/index.php on line 22
+[05-Jan-2020 11:02:09 Asia/Tehran] PHP Parse error:  syntax error, unexpected end of file in /home/imadevelop/orion/local/storage/framework/views/77e807a582908a514734c778ddf037d8e94f569c.php on line 1110
+[05-Jan-2020 11:05:09 Asia/Tehran] PHP Parse error:  syntax error, unexpected end of file in /home/imadevelop/orion/local/storage/framework/views/77e807a582908a514734c778ddf037d8e94f569c.php on line 1110
+[05-Jan-2020 11:06:10 Asia/Tehran] PHP Parse error:  syntax error, unexpected end of file in /home/imadevelop/orion/local/storage/framework/views/77e807a582908a514734c778ddf037d8e94f569c.php on line 1110
+[05-Jan-2020 11:06:15 Asia/Tehran] PHP Parse error:  syntax error, unexpected end of file in /home/imadevelop/orion/local/storage/framework/views/77e807a582908a514734c778ddf037d8e94f569c.php on line 1110
+[05-Jan-2020 11:13:07 Asia/Tehran] PHP Parse error:  syntax error, unexpected end of file in /home/imadevelop/orion/local/storage/framework/views/77e807a582908a514734c778ddf037d8e94f569c.php on line 1110
+[13-Jan-2020 20:07:09 Asia/Tehran] PHP Fatal error:  Class 'App\Providers\Setting' not found in /home/imadevelop/orion/local/app/Providers/AppServiceProvider.php on line 35
+[13-Jan-2020 20:11:50 Asia/Tehran] PHP Fatal error:  Class 'Illuminate\Support\Setting' not found in /home/imadevelop/orion/local/app/Providers/AppServiceProvider.php on line 36
+[05-Feb-2020 11:46:31 Asia/Tehran] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /home/imadevelop/stroyka/local/storage/framework/views/70704eceb1a606cd1ca810f9fd7f60b1327072d1.php on line 33
+[05-Feb-2020 11:47:27 Asia/Tehran] PHP Parse error:  syntax error, unexpected ':', expecting '(' in /home/imadevelop/stroyka/local/storage/framework/views/70704eceb1a606cd1ca810f9fd7f60b1327072d1.php on line 33
+[19-Feb-2020 15:14:27 Asia/Tehran] PHP Fatal error:  Class 'App\Providers\ProductCategory' not found in /home/imadevelop/sinazaeem/local/app/Providers/AppServiceProvider.php on line 36
+[08-Apr-2020 13:56:49 Asia/Tehran] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/tvu2018/public_html/local/app/Http/Controllers/Admin/AdminController.php on line 16
+[08-Apr-2020 14:32:26 Asia/Tehran] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/tvu2018/public_html/local/app/Http/Controllers/Admin/AdminController.php on line 16
+[08-Apr-2020 17:49:49 Asia/Tehran] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/tvu2018/public_html/local/app/Http/Controllers/Admin/AdminController.php on line 16
+[08-Apr-2020 18:00:58 Asia/Tehran] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/tvu2018/public_html/local/app/Http/Controllers/Admin/AdminController.php on line 16
+[11-Apr-2020 20:59:17 Asia/Tehran] PHP Fatal error:  Call to a member function get() on null in /home/tvu2018/public_html/local/storage/framework/views/e399bb1b1f1172f35195616a12aa1fa727d6e81a.php on line 264
+[11-Apr-2020 20:59:28 Asia/Tehran] PHP Fatal error:  Call to a member function get() on null in /home/tvu2018/public_html/local/storage/framework/views/e399bb1b1f1172f35195616a12aa1fa727d6e81a.php on line 264
+[11-Apr-2020 21:01:55 Asia/Tehran] PHP Fatal error:  Call to a member function get() on null in /home/tvu2018/public_html/local/storage/framework/views/e399bb1b1f1172f35195616a12aa1fa727d6e81a.php on line 263
+[10-May-2020 13:02:57 Asia/Tehran] PHP Fatal error:  Can't use function return value in write context in /home/imasitesaz/niazpet/local/storage/framework/views/cddabae6509d51aefbb525026380979d44b17162.php on line 24
+[11-May-2020 12:15:14 Asia/Tehran] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/niazpet/public_html/local/app/Http/Controllers/Admin/AdminController.php on line 16
+[11-May-2020 12:15:38 Asia/Tehran] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/niazpet/public_html/local/app/Http/Controllers/Admin/AdminController.php on line 16
+[11-May-2020 14:03:01 Asia/Tehran] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/niazpet/public_html/local/app/Http/Controllers/Admin/AdminController.php on line 16
+[11-May-2020 14:07:56 Asia/Tehran] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/niazpet/public_html/local/app/Http/Controllers/Admin/AdminController.php on line 16
+[12-May-2020 10:02:18 Asia/Tehran] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/niazpet/public_html/local/app/Http/Controllers/Admin/AdminController.php on line 16
+[18-May-2020 10:51:00 Asia/Tehran] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/niazpet/public_html/local/app/Http/Controllers/Admin/AdminController.php on line 16
+[18-May-2020 12:37:08 Asia/Tehran] PHP Fatal error:  Call to a member function with() on integer in /home/niazpet/public_html/local/app/Http/Controllers/ProductController.php on line 109
+[18-May-2020 12:37:10 Asia/Tehran] PHP Fatal error:  Call to a member function with() on integer in /home/niazpet/public_html/local/app/Http/Controllers/ProductController.php on line 109
+[18-May-2020 12:37:13 Asia/Tehran] PHP Fatal error:  Call to a member function with() on integer in /home/niazpet/public_html/local/app/Http/Controllers/ProductController.php on line 109
+[18-May-2020 12:39:32 Asia/Tehran] PHP Fatal error:  Call to a member function with() on integer in /home/niazpet/public_html/local/app/Http/Controllers/ProductController.php on line 109
+[18-May-2020 12:39:45 Asia/Tehran] PHP Fatal error:  Call to a member function with() on integer in /home/niazpet/public_html/local/app/Http/Controllers/ProductController.php on line 109
+[18-May-2020 13:01:52 Asia/Tehran] PHP Fatal error:  Class 'ProductCategory' not found in /home/niazpet/public_html/local/storage/framework/views/a0c445831e90662bd535b8f4a099e00e1a6b43a8.php on line 13
+[18-May-2020 13:13:35 Asia/Tehran] PHP Fatal error:  Call to undefined method Illuminate\View\Engines\CompilerEngine::filter() in /home/niazpet/public_html/local/storage/framework/views/a0c445831e90662bd535b8f4a099e00e1a6b43a8.php on line 16
+[18-May-2020 13:21:33 Asia/Tehran] PHP Fatal error:  Call to undefined method Illuminate\View\Engines\CompilerEngine::filter() in /home/niazpet/public_html/local/storage/framework/views/a0c445831e90662bd535b8f4a099e00e1a6b43a8.php on line 16
+[18-May-2020 13:21:35 Asia/Tehran] PHP Fatal error:  Call to undefined method Illuminate\View\Engines\CompilerEngine::filter() in /home/niazpet/public_html/local/storage/framework/views/a0c445831e90662bd535b8f4a099e00e1a6b43a8.php on line 16
+[18-May-2020 13:21:41 Asia/Tehran] PHP Fatal error:  Call to undefined method Illuminate\View\Engines\CompilerEngine::filter() in /home/niazpet/public_html/local/storage/framework/views/a0c445831e90662bd535b8f4a099e00e1a6b43a8.php on line 16
+[18-May-2020 13:21:46 Asia/Tehran] PHP Fatal error:  Call to undefined method Illuminate\View\Engines\CompilerEngine::filter() in /home/niazpet/public_html/local/storage/framework/views/a0c445831e90662bd535b8f4a099e00e1a6b43a8.php on line 16
+[18-May-2020 13:21:49 Asia/Tehran] PHP Fatal error:  Call to undefined method Illuminate\View\Engines\CompilerEngine::filter() in /home/niazpet/public_html/local/storage/framework/views/a0c445831e90662bd535b8f4a099e00e1a6b43a8.php on line 16
+[18-May-2020 13:22:02 Asia/Tehran] PHP Fatal error:  Call to undefined method Illuminate\View\Engines\CompilerEngine::filter() in /home/niazpet/public_html/local/storage/framework/views/a0c445831e90662bd535b8f4a099e00e1a6b43a8.php on line 16
+[18-May-2020 13:29:40 Asia/Tehran] PHP Parse error:  syntax error, unexpected '<' in /home/niazpet/public_html/local/storage/framework/views/a0c445831e90662bd535b8f4a099e00e1a6b43a8.php on line 17
+[18-May-2020 13:30:03 Asia/Tehran] PHP Parse error:  syntax error, unexpected '<' in /home/niazpet/public_html/local/storage/framework/views/a0c445831e90662bd535b8f4a099e00e1a6b43a8.php on line 17
+[18-May-2020 13:41:24 Asia/Tehran] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home/niazpet/public_html/local/storage/framework/views/a0c445831e90662bd535b8f4a099e00e1a6b43a8.php on line 118
+[20-May-2020 11:59:12 Asia/Tehran] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home/niazpet/public_html/local/storage/framework/views/24e05ad1ba19b840b361b7ed6be14be1bf331274.php on line 399
+[20-May-2020 12:00:04 Asia/Tehran] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF) in /home/niazpet/public_html/local/storage/framework/views/24e05ad1ba19b840b361b7ed6be14be1bf331274.php on line 398
+[20-May-2020 12:07:35 Asia/Tehran] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home/niazpet/public_html/local/storage/framework/views/24e05ad1ba19b840b361b7ed6be14be1bf331274.php on line 400
+[20-May-2020 12:08:49 Asia/Tehran] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home/niazpet/public_html/local/storage/framework/views/24e05ad1ba19b840b361b7ed6be14be1bf331274.php on line 400
+[20-May-2020 12:09:30 Asia/Tehran] PHP Parse error:  syntax error, unexpected 'endforeach' (T_ENDFOREACH) in /home/niazpet/public_html/local/storage/framework/views/24e05ad1ba19b840b361b7ed6be14be1bf331274.php on line 400
+[21-May-2020 12:07:25 Asia/Tehran] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/niazpet/public_html/local/app/Http/Controllers/Admin/AdminController.php on line 16
+[21-May-2020 12:11:11 Asia/Tehran] PHP Fatal error:  Call to a member function getClientOriginalName() on null in /home/niazpet/public_html/local/app/Http/Controllers/Admin/AdminController.php on line 16
+[24-May-2020 11:42:03 Asia/Tehran] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 24000 bytes) in /home/niazpet/public_html/local/vendor/intervention/image/src/Intervention/Image/Gd/Decoder.php on line 138
+[24-May-2020 11:42:56 Asia/Tehran] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 24000 bytes) in /home/niazpet/public_html/local/vendor/intervention/image/src/Intervention/Image/Gd/Decoder.php on line 138
+[24-May-2020 11:44:31 Asia/Tehran] PHP Fatal error:  Allowed memory size of 134217728 bytes exhausted (tried to allocate 24000 bytes) in /home/niazpet/public_html/local/vendor/intervention/image/src/Intervention/Image/Gd/Decoder.php on line 138
