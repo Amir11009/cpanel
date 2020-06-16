@@ -49,8 +49,8 @@ class CpanelController extends Controller
             'dir'=>'/public_html',
             'dissallowdot'=>1,
         ];
-//      $add_cpanel = new cPanel();
-        $r=$cpanel->cpanelExecute($parameter);
+//      $add_cpanel = new cPanel("imaagahi", "##Ima1391$$", "imaagahi.ir");
+        return  $cpanel->execute('uapi','SubDomain','addsubdomain',$parameter);
 //        $add_cpanel=Cpanell::cpanelExecute($parameter);
 //        $add_cpanel->cpanelExecute($parameter);
         dd($r);

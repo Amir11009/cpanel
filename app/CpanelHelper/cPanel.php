@@ -102,6 +102,13 @@ class cPanel
             throw new Exception("Cannot connect to your cPanel server : Invalid Credentials", 1);
         }
     }
+    public function cpanelExecute($parameter){
+        var_dump($parameter);
+        global $cpanel;
+        $result = $cpanel->execute('uapi','SubDomain','addsubdomain',$parameter);
+        var_dump($result);
+        die();
+    }
     public function execute($api, $module, $function, array $parameters = [])
     {
         switch ($api) {
@@ -141,12 +148,6 @@ class cPanel
             "&cpanel_jsonapi_func={$function}".
             "&cpanel_jsonapi_module={$module}&". $parameters;
         return json_decode($this->Request($url,$parameters));
-    }
-    public function cpanelExecute($parameter){
-        global $cpanel;
-        $result = $cpanel->execute('uapi','SubDomain','addsubdomain',$parameter);
-        var_dump($result);
-        die();
     }
 }
 $cpanel= new cPanel("imaagahi", "##Ima1391$$", "imaagahi.ir");
