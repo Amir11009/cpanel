@@ -43,6 +43,7 @@ class CpanelController extends Controller
      */
     public function store(Request $request)
     {
+        $domain =['domain' => $request['domain']];
         $parameter =[
             'domain'=>$request['domain'],
             'rootdomain'=> 'imaagahi.ir',
@@ -50,7 +51,8 @@ class CpanelController extends Controller
             'dissallowdot'=>1,
         ];
         $add_cpanel = new cPanel_meta("imaagahi", "##Ima1391$$", 'imaagahi.ir');
-        $add_cpanel->cpanelExecute($parameter);
+        $add_cpanel->cpanelMaker($parameter);
+        $add_cpanel->databaseMaker($domain);
         $status_request =$request['status'];
         $status= 0;
         if ($status_request == 'on'){

@@ -79,7 +79,7 @@
                                      select value="1">
                                     <label class="control-label ml-2">کانسپت :</label>
                                     <input type="checkbox" class="custom-control-input"
-                                           id="customSwitch2_" name="status">
+                                           id="customSwitch2_" name="site_type">
                                     فروشگاهی
                                     <label class="custom-control-label" for="customSwitch2_"
                                            style="margin-right:50px">

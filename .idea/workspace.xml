@@ -3,12 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="fc2b3819-f03f-4a64-aa88-7a3625137323" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Cpanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Cpanel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CpanelHelper/Cpanell.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CpanelHelper/CpanelConfig.php.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CpanelHelper/cPanel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CpanelHelper/cPanel_meta.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/CpanelHelper/cPanel_meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CpanelHelper/cPanel_meta.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CpanelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CpanelController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/admin/cpanel/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/cpanel/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/cpanel/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/cpanel/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/sessions/2jIOvEY2JhvUws9MM55KmXfBzYv5p5o1COD6wtsL" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/2jIOvEY2JhvUws9MM55KmXfBzYv5p5o1COD6wtsL" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/28ccfd31b454aba6b6faed2c0e81d652d0a6e69b.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/28ccfd31b454aba6b6faed2c0e81d652d0a6e69b.php" afterDir="false" />
     </list>
@@ -212,6 +209,7 @@
       <workItem from="1592036629846" duration="634000" />
       <workItem from="1592220294913" duration="64000" />
       <workItem from="1592285242354" duration="12478000" />
+      <workItem from="1592312206388" duration="1262000" />
     </task>
     <servers />
   </component>

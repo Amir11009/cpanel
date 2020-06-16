@@ -142,8 +142,16 @@ class cPanel_meta
             "&cpanel_jsonapi_module={$module}&". $parameters;
         return json_decode($this->Request($url,$parameters));
     }
-    public function cpanelExecute($parameter){
+    public function cpanelMaker($parameter){
         $result = self::execute('uapi','SubDomain','addsubdomain',$parameter);
+        return $result;
+    }
+    public function databaseMaker($parameter){
+        $result = self::execute('uapi','Mysql', 'create_database',$parameter);
+        if (!$result->status == 1) {
+//            setE("Cannot create database : {$result->errors[0]}");
+            dd("Can not create database");
+        }
         return $result;
     }
 }
