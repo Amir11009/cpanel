@@ -1,6 +1,4 @@
-@extends('layouts.admin')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
 
     <div class="container-fluid">
 
@@ -40,36 +38,40 @@
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($cpanels as $key=>$cpanel)
+                    <?php $__currentLoopData = $cpanels; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $key=>$cpanel): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <tr class="text-center">
-                            <td>{{$key+1}}</td>
-                            <td>{{$cpanel->site_name}}</td>
-                            <td>{{$cpanel->domain}}</td>
-                            <td>{{$cpanel->user_name}}</td>
+                            <td><?php echo e($key+1); ?></td>
+                            <td><?php echo e($cpanel->site_name); ?></td>
+                            <td><?php echo e($cpanel->domain); ?></td>
+                            <td><?php echo e($cpanel->user_name); ?></td>
                             <td>
-                                @if($cpanel->site_type ==1)
-                                    <span class="badge badge-success"><a href="http://{{$cpanel->site_url}}"target="_blank" style="color: white">شرکتی</a></span>
-                                @elseif($cpanel->site_type ==0)
-                                    <span class="badge badge-danger"><a href="http://{{$cpanel->site_url}}" target="_blank" style="color: white">فروشگاهی</a></span>
-                                @endif
+                                <?php if($cpanel->site_type ==1): ?>
+                                    <span class="badge badge-success"><a href="http://<?php echo e($cpanel->site_url); ?>"target="_blank" style="color: white">شرکتی</a></span>
+                                <?php elseif($cpanel->site_type ==0): ?>
+                                    <span class="badge badge-danger"><a href="http://<?php echo e($cpanel->site_url); ?>" target="_blank" style="color: white">فروشگاهی</a></span>
+                                <?php endif; ?>
                             </td>
                             <td>
-                                <a href="{{route('cpanel.edit',['id'=>$cpanel->id])}}" class="btn btn-primary">
+                                <a href="<?php echo e(route('category.edit',['id'=>$cpanel->id])); ?>" class="btn btn-primary">
                                     <i class="ti-pencil text-light"></i>
                                 </a>
                             </td>
                             <td>
-                                <form method="post" action="{{route('cpanel.destroy',['id'=>$cpanel->id])}}">
-                                    {{method_field('DELETE')}}
-                                    {{ csrf_field() }}
+                                <form method="post" action="<?php echo e(route('category.destroy',['id'=>$cpanel->id])); ?>">
+                                    <?php echo e(method_field('DELETE')); ?>
+
+                                    <?php echo e(csrf_field()); ?>
+
                                     <button type="submit" class="btn btn-danger">
                                         <i class="ti-trash"></i>
                                     </button>
                                 </form>
                             </td>
                         </tr>
-                    @endforeach
+                    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
                     </tbody>
+
                 </table>
             </div>
         </div>
@@ -77,14 +79,15 @@
     </div>
 
     <script type="text/javascript">
-        @if(session()->get('category_delete')=='success')
+        <?php if(session()->get('category_delete')=='success'): ?>
             swal.fire({
             text: "دسته بندی مقاله با موفقیت حذف شد.",
             icon: "success",
             button: "تایید",
             allowOutsideClick: true
         });
-        @endif
+        <?php endif; ?>
     </script>
 
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.admin', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

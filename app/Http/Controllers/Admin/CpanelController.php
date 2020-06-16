@@ -2,9 +2,9 @@
 
 namespace App\Http\Controllers\Admin;
 
-//use App\Cpanel;
-use App\CpanelHelper\cPanel;
-use App\CpanelHelper\Cpanell;
+use App\Cpanel;
+use App\CpanelHelper\cPanel_meta;
+use App\CpanelHelper\CpanelConfig;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -19,7 +19,8 @@ class CpanelController extends Controller
     public function index()
     {
         //
-        return  view('admin.cpanel.index');
+        $cpanels = Cpanel::all();
+        return  view('admin.cpanel.index', compact('cpanels'));
     }
 
     /**
@@ -42,18 +43,14 @@ class CpanelController extends Controller
      */
     public function store(Request $request)
     {
-        global $cpanel;
         $parameter =[
-            'domain'=>$request['site_name'],
+            'domain'=>$request['domain'],
             'rootdomain'=> 'imaagahi.ir',
             'dir'=>'/public_html',
             'dissallowdot'=>1,
         ];
-//      $add_cpanel = new cPanel();
-        $r=$cpanel->cpanelExecute($parameter);
-//        $add_cpanel=Cpanell::cpanelExecute($parameter);
-//        $add_cpanel->cpanelExecute($parameter);
-        dd($r);
+        $add_cpanel = new cPanel_meta("imaagahi", "##Ima1391$$", 'imaagahi.ir');
+        $add_cpanel->cpanelExecute($parameter);
         $status_request =$request['status'];
         $status= 0;
         if ($status_request == 'on'){
@@ -69,7 +66,8 @@ class CpanelController extends Controller
             'site_name' =>$request['site_name'],
             'site_url' =>$request['site_url'],
             'site_type' =>$type,
-//            'theme_code' =>$code,
+            'domain' =>$request['domain'],
+            'theme_code' =>0,
             'status' =>$status
         ]);
         return redirect()->back()->with(array(

@@ -41,17 +41,25 @@
                             <div class="row mt-2">
                                 <div class="col-md-6">
                                     <label class="control-label ">نام سایت :</label>
-                                    <input type="text" class="form-control" name="site_name" required placeholder="ima-web">
+                                    <input type="text" class="form-control" name="site_name" required placeholder="سایت ساز">
 
 
                                 </div>
                             </div>
                             <div class="row mt-2">
                                 <div class="col-md-6">
-                                    <label class="control-label ">آدرس سایت :</label>
-                                    <input type="text" class="form-control" name="site_url" required placeholder="ima-web">
+                                    <label class="control-label ">نام دامنه :</label>
+                                    <input type="text" class="form-control" name="domain" required placeholder="ima-web">
                                     <span class="mt-1"
                                           style="color: red"> آدرس سایت را بدون پسوند ir. , com. وارد کنید</span>
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-md-6">
+                                    <label class="control-label ">آدرس دامنه :</label>
+                                    <input type="text" class="form-control" name="site_url" required placeholder="www.ima-web.com">
+                                    <span class="mt-1"
+                                          style="color: red"> آدرس کامل سایت را  با .www وارد کنید</span>
                                 </div>
                             </div>
                             <div class="row mt-2">

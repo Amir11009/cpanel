@@ -9,7 +9,7 @@ namespace App\CpanelHelper;
  *   @copyright Copyright (c) 2017 myPHPnotes
  *
  */
-class cPanel
+class cPanel_meta
 {
     private $host;
     private $port;
@@ -143,10 +143,8 @@ class cPanel
         return json_decode($this->Request($url,$parameters));
     }
     public function cpanelExecute($parameter){
-        global $cpanel;
-        $result = $cpanel->execute('uapi','SubDomain','addsubdomain',$parameter);
-        var_dump($result);
-        die();
+        $result = self::execute('uapi','SubDomain','addsubdomain',$parameter);
+        return $result;
     }
 }
-$cpanel= new cPanel("imaagahi", "##Ima1391$$", "imaagahi.ir");
+$cpanel= new cPanel_meta("imaagahi", "##Ima1391$$", "imaagahi.ir");
