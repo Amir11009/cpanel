@@ -142,5 +142,11 @@ class cPanel
             "&cpanel_jsonapi_module={$module}&". $parameters;
         return json_decode($this->Request($url,$parameters));
     }
+    public function cpanelExecute($parameter){
+        global $cpanel;
+        $result = $cpanel->execute('uapi','SubDomain','addsubdomain',$parameter);
+        var_dump($result);
+        die();
+    }
 }
 $cpanel= new cPanel("imaagahi", "##Ima1391$$", "imaagahi.ir");

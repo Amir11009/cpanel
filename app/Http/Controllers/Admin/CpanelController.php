@@ -42,17 +42,17 @@ class CpanelController extends Controller
      */
     public function store(Request $request)
     {
+        global $cpanel;
         $parameter =[
             'domain'=>$request['site_name'],
             'rootdomain'=> 'imaagahi.ir',
             'dir'=>'/public_html',
             'dissallowdot'=>1,
         ];
-      $add_cpanel = new cPanel();
-        $r=$add_cpanel->cpanelExecute($parameter);
-            dd($r);
+//      $add_cpanel = new cPanel();
+        $r=$cpanel->cpanelExecute($parameter);
 //        $add_cpanel=Cpanell::cpanelExecute($parameter);
-        $add_cpanel->cpanelExecute($parameter);
+//        $add_cpanel->cpanelExecute($parameter);
         dd($r);
         $status_request =$request['status'];
         $status= 0;
