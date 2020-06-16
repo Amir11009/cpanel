@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers\Admin;
 
-//use App\Cpanel;
-use App\CpanelHelper\cPanel;
+use App\Cpanel;
+//use App\CpanelHelper\cPanel;
 use App\CpanelHelper\Cpanell;
 
 use Illuminate\Http\Request;
@@ -42,18 +42,17 @@ class CpanelController extends Controller
      */
     public function store(Request $request)
     {
-        global $cpanel;
+//        global $cpanel;
         $parameter =[
             'domain'=>$request['site_name'],
             'rootdomain'=> 'imaagahi.ir',
             'dir'=>'/public_html',
             'dissallowdot'=>1,
         ];
-//      $add_cpanel = new cPanel("imaagahi", "##Ima1391$$", "imaagahi.ir");
-        return  $cpanel->execute('uapi','SubDomain','addsubdomain',$parameter);
+      $add_cpanel = new Cpanel("imaagahi", "##Ima1391$$", "imaagahi.ir");
+        $result=$add_cpanel->execute('uapi','SubDomain','addsubdomain',$parameter);
 //        $add_cpanel=Cpanell::cpanelExecute($parameter);
 //        $add_cpanel->cpanelExecute($parameter);
-        dd($r);
         $status_request =$request['status'];
         $status= 0;
         if ($status_request == 'on'){
