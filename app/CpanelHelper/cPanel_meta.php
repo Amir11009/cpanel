@@ -150,7 +150,7 @@ class cPanel_meta
         $result = self::execute('uapi','Mysql', 'create_database',$parameter);
         if (!$result->status == 1) {
 //            setE("Cannot create database : {$result->errors[0]}");
-            dd("Can not create database");
+            dd("Can not create database : {$result->errors[0]}");
         }
         return $result;
     }

