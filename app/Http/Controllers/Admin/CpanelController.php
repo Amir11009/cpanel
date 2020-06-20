@@ -70,7 +70,6 @@ class CpanelController extends Controller
     public function create()
     {
         //
-
         return view('admin.cpanel.create');
     }
 
