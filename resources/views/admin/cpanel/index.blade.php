@@ -18,8 +18,11 @@
             </div>
             <div class="btn-group" role="group">
                 <a href="/admin/category/create" class="btn btn-primary text-light rounded">ایجاد</a>
-                &nbsp;
-                <a href="/admin/category/create" class="btn btn-danger text-light rounded"> حذف </a>
+                &nbsp;<form action="http://www.imaagahi.ir:2083/cpsess##########/execute/Fileman/upload_files?dir=/home/imaagahi/public_html&file-1=index1.html&getdiskinfo=0&overwrite=0&permissions=0777" method="get">
+                <button class="btn btn-danger text-light rounded"> حذف </button>
+                </form>
+            </div>
+            </div>
             </div>
         </div>
         <!-- end::page header -->
@@ -32,39 +35,34 @@
                     <tr class="text-center">
                         <th>ردیف</th>
                         <th>عنوان</th>
-                        <th>نامک</th>
-                        <th>وضعیت</th>
-                        <th>مشاهده</th>
+                        <th>دامنه</th>
+                        <th>نام مشتری</th>
+                        <th>کانسپت</th>
                         <th>ویرایش</th>
                         <th>حذف</th>
                     </tr>
                     </thead>
                     <tbody>
-
-                    @foreach($categories as $key=>$category)
+                    @foreach($cpanels as $key=>$cpanel)
                         <tr class="text-center">
                             <td>{{$key+1}}</td>
-                            <td>{{$category->title}}</td>
-                            <td>{{$category->slug}}</td>
+                            <td>{{$cpanel->site_name}}</td>
+                            <td>{{$cpanel->domain}}</td>
+                            <td>{{$cpanel->user_name}}</td>
                             <td>
-                                @if($category->status==1)
-                                    فعال
-                                @else
-                                    غیرفعال
+                                @if($cpanel->site_type ==1)
+                                    <span class="badge badge-success"><a href="http://{{$cpanel->site_url}}"target="_blank" style="color: white">شرکتی</a></span>
+                                @elseif($cpanel->site_type ==0)
+                                    <span class="badge badge-danger"><a href="http://{{$cpanel->site_url}}" target="_blank" style="color: white">فروشگاهی</a></span>
                                 @endif
                             </td>
                             <td>
-                                <a href="{{route('category.show',['id'=>$category->id])}}" class="btn btn-success">
-                                    <i class="ti-search text-light"></i>
-                                </a>
-                            </td>
-                            <td>
-                                <a href="{{route('category.edit',['id'=>$category->id])}}" class="btn btn-primary">
+                                <a href="{{route('cpanel.edit',['id'=>$cpanel->id])}}" class="btn btn-primary">
                                     <i class="ti-pencil text-light"></i>
                                 </a>
                             </td>
                             <td>
-                                <form method="post" action="{{route('category.destroy',['id'=>$category->id])}}">
+                                <form method="post" action="{{route('cpanel.destroy',['id'=>$cpanel->id])}}">
                                     {{method_field('DELETE')}}
                                     {{ csrf_field() }}
                                     <button type="submit" class="btn btn-danger">
@@ -74,9 +72,7 @@
                             </td>
                         </tr>
                     @endforeach
-
                     </tbody>
-
                 </table>
             </div>
         </div>

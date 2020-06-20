@@ -127,14 +127,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
     </include_path>
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/.gitignore" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectId" id="1cR01X1HPPwAtHvYmLI3I6N9mwB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -202,6 +194,9 @@
       <workItem from="1592036629846" duration="634000" />
       <workItem from="1592220294913" duration="64000" />
       <workItem from="1592285242354" duration="12478000" />
+      <workItem from="1592312206388" duration="6451000" />
+      <workItem from="1592457057422" duration="18288000" />
+      <workItem from="1592631008049" duration="17741000" />
     </task>
     <servers />
   </component>
@@ -226,8 +221,17 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/admin/cpanel/create.blade.php</url>
-          <line>57</line>
+          <line>65</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php-line-method">
+          <url>file://$PROJECT_DIR$/app/CpanelHelper/cpanelModifier.php</url>
+          <line>78</line>
+          <properties>
+            <option name="className" value="\App\CpanelHelper\cpanelModifier" />
+            <option name="methodName" value="custom_copy" />
+          </properties>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

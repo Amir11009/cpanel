@@ -104,6 +104,8 @@ Route::post('/product/search', 'ProductController@search');
 
 Route::middleware(['auth', 'BlockAdminUrl'])->namespace('Admin')->prefix('')->group(function () {
 //Route::prefix('')->namespace('Admin')->group(function () {
+    $this::get('/11', function (){
+    });
     $this::resource('/admin/cpanel', 'CpanelController');
     $this::resource('/admin/setting', 'SettingController');
 

@@ -8,7 +8,7 @@ class Cpanel extends Model
 {
     //
     protected $fillable=[
-        'user_name','site_url','site_type','site_name','theme_code','status'
+        'user_name','site_url','site_type','site_name','domain','theme_code','status'
     ];
     private $host;
     private $port;
